@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shop</title>
+
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+         <script src="https://kit.fontawesome.com/a17650265c.js" crossorigin="anonymous"></script>
+         <script defer src="https://friconix.com/cdn/friconix-0.2538.js"> </script>
+
+        <link rel="stylesheet" href="style.css">
+        <style>
+          .product img{
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            object-fit: cover;
+          }
+          #featured > div.row.mx-auto.container > nav > ul > li.page-item.active > a {
+            background-color: black;
+            outline: none;
+          }
+          #featured > div.row.mx-auto.container > nav > ul > li:nth-child(n):hover>a {
+            background-color: coral;
+            color: #fff;
+          }
+       .pagination a{
+        color:black;
+       }
+       .pagination a{
+        box-shadow: none !important;
+        outline: none !important;
+       }
+        </style>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg  navbar-light bg-white py-3 fixed-top">
+            <div class="container">
+            <h2>Bling</h2>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i id="bar" class="fi-xnsuxl-three-bars-solid"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog-post.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#footer-section">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#footer-section">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> <i class="ri-search-line"></i></a> 
+                      <!-- <a class="nav-link active" href="#"> <i class="ri-shopping-bag-line"></i></a> -->
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="shopping-cart.html"> <i class="ri-shopping-bag-line"></i></a>
+                      </li>
+                  
+              </div>
+            </div>
+          </nav>
+
+          <section id="featured" class="my-5 py-5">
+            <div class="container mt-5 py-5">
+              <h2 class="font-weight-bold">Our Featured </h2>
+              <hr>
+              <p>Here you can check out our new products with fair prices on Bling</p>
+              </div>
+              <div class="row mx-auto container">
+                <div onclick="window.location.href='singlep.html';" class="product text-center col-lg-3 col-md-4 col-12">
+              <img class="img-fluid mb-3" src="assets/shop/1.jpg" alt="">
+              <div class="star">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <h5 class="p-name">T-Shirt</h5>
+              <h4 class="p-price">$92.30</h4>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+              <img class="img-fluid mb-3" src="assets/shop/headphone.jpg" alt="">
+              <div class="star">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <h5 class="p-name">HeadPhone</h5>
+              <h4 class="p-price">$92.30</h4>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+              <img class="img-fluid mb-3" src="assets/shop/10.jpg" alt="">
+              <div class="star">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <h5 class="p-name">Watch</h5>
+              <h4 class="p-price">$92.30</h4>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+              <img class="img-fluid mb-3" src="assets/shop/laptop.jpg" alt="">
+              <div class="star">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <h5 class="p-name">Laptop</h5>
+              <h4 class="p-price">$92.30</h4>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/shop/3.jpg" alt="">
+                <div class="star">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="p-name">Purse</h5>
+                <h4 class="p-price">$92.30</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/shop/8.jpg" alt="">
+                <div class="star">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="p-name">Jacket</h5>
+                <h4 class="p-price">$92.30</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/shop/7.jpg" alt="">
+                <div class="star">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="p-name">Boots</h5>
+                <h4 class="p-price">$92.30</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/shop/phone.jpg" alt="">
+                <div class="star">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="p-name">Phone</h5>
+                <h4 class="p-price">$92.30</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/shop/9.jpg" alt="">
+                <div class="star">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="p-name">BackPack</h5>
+                <h4 class="p-price">$92.30</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/shop/26.jpg" alt="">
+                <div class="star">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="p-name">T-shirt</h5>
+                <h4 class="p-price">$92.30</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/shop/4.jpg" alt="">
+                <div class="star">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="p-name">Boots</h5>
+                <h4 class="p-price">$92.30</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/shop/23.jpg" alt="">
+                <div class="star">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="p-name">T-shirt</h5>
+                <h4 class="p-price">$92.30</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/featured/4.jpg" alt="">
+                <div class="star">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="p-name">Hat</h5>
+                <h4 class="p-price">$92.30</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/shop/15.jpg" alt="">
+                <div class="star">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="p-name">Hat</h5>
+                <h4 class="p-price">$92.30</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/shop/11.jpg" alt="">
+                <div class="star">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="p-name">Hat</h5>
+                <h4 class="p-price">$92.30</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/shop/5.jpg" alt="">
+                <div class="star">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="p-name">Hat</h5>
+                <h4 class="p-price">$92.30</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/shop/20.jpg" alt="">
+                <div class="star">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="p-name">Top & Bottom</h5>
+                <h4 class="p-price">$92.30</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/shop/19.jpg" alt="">
+                <div class="star">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="p-name">Hoodie</h5>
+                <h4 class="p-price">$92.30</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/shop/21.jpg" alt="">
+                <div class="star">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="p-name">Coat</h5>
+                <h4 class="p-price">$92.30</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="assets/shop/17.jpg" alt="">
+                <div class="star">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <h5 class="p-name">Jacket</h5>
+                <h4 class="p-price">$92.30</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+
+
+
+              <nav aria-label="Page navigation example">
+                <ul class="pagination mt-5">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
+
+          </div>
+          
+          </section>
+
+
+          <footer class="mt-5 py-5" id="footer-section">
+            <div class="row container mx-auto pt-5">
+              <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="name">Bling</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus blandit dolor, finibus suscipit purus elementum quis.</p>
+              </div>
+              <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+                  <li><a href="#">men</a></li>
+                  <li><a href="#">women</a></li>
+                  <li><a href="#">boys</a></li>
+                  <li><a href="#">girls</a></li>
+                  <li><a href="#">new arrivals</a></li>
+                  <li><a href="#">shoes</a></li>
+                  <li><a href="#">clothes</a></li>
+                </ul>
+              </div>
+              <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Contact Us</h5>
+               <div>
+                <h6 class="text-uppercase">Address</h6>
+                <p>123 STREET NAME, CITY, COUNTRY</p>
+               </div>
+               <div>
+                <h6 class="text-uppercase">Phone</h6>
+                <p>(+91) 0000000000</p>
+               </div>
+               <div>
+                <h6 class="text-uppercase">Email</h6>
+                <p>MAIL@gmail.com</p>
+               </div>
+              </div>
+
+              <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Instagram</h5>
+                <div class="row">
+                  <img class="img-fluid w-25 h-100 m-2" src="assets/instagram/1.jpg" alt="">
+                  <img class="img-fluid w-25 h-100 m-2" src="assets/instagram/2.jpg" alt="">
+                  <img class="img-fluid w-25 h-100 m-2" src="assets/instagram/3.jpg" alt="">
+                  <img class="img-fluid w-25 h-100 m-2" src="assets/instagram/4.jpg" alt="">
+                  <img class="img-fluid w-25 h-100 m-2" src="assets/instagram/5.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="copyright mt-5">
+              <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img src="assets/payment.png" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                  <p>Bling ECommerce © 2022. All Rights Reserved</p>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </div>
+              </div>
+            </div>
+
+          </footer>
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+            </body>
+        
+        </html>
